@@ -1,0 +1,27 @@
+{
+  "name": "travler",
+  "version": "1.0.0",
+  "description": "Travel website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DlOMEDES/travler.git"
+  },
+  "author": "Diomedes Lajara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DlOMEDES/travler/issues"
+  },
+  "homepage": "https://github.com/DlOMEDES/travler#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "live-server": "^1.2.0",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
