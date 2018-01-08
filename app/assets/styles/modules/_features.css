@@ -1,0 +1,13 @@
+#features {
+  background-color: $mainBlue;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__item {
+    width: 80%;
+    padding-top: 15%;
+  } 
+}

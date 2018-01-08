@@ -1,0 +1,29 @@
+
+/* VARIABLES ARE NOT WORKING!? */
+/* https://coolors.co/5e2bff-e75a7c-c04cfd-f7f6c5-eee5e5 */
+
+/* COLORS
+white: #eee6e5
+main blue: #634dfc
+dark pink: #e75a7c
+*/
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* color: $main-color;  */
+  font-size: 1.6rem;
+}
+
+a {
+  color: #634dfc;
+}

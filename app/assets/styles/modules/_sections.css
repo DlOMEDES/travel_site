@@ -1,0 +1,9 @@
+section {
+  padding: 3.2rem 0;
+  
+
+  @mixin Large {
+    padding: 8.2rem 0;
+    text-align: left;
+  }
+}

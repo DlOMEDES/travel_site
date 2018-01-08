@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="64px" viewBox="0 0 56 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>fire</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fire" fill-rule="nonzero" fill="#EEE6E5">
+            <path d="M16,0 C24,16 0,24 0,40 C0,56 16,64 16,64 C8.16,48.16 32,40 32,24 C32,8 16,0 16,0 Z M40,24 C48,40 24,48 24,64 L48,64 C51.2,64 56,60 56,48 C56,32 40,24 40,24 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

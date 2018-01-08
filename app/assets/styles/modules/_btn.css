@@ -1,0 +1,20 @@
+.btn {
+  background-color: $darkPink;
+  color: #eee6e5;
+  padding: 1rem 1rem;
+  display: inline-block;
+  
+  &--large {
+    background-color: $mainBlue;
+    padding: 1.5rem 1.5rem;    
+    color: $white;
+    font-size: 1.4rem;
+    
+    @mixin Large {
+      padding: 2rem 3rem;    
+      color: $white;
+      font-size: 1.8rem;
+    }  
+  }
+}
+
