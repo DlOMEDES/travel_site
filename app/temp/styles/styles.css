@@ -481,6 +481,11 @@ a {
   color: #634dfc;
 }
 
+/* h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+} */
+
 .text {
   line-height: 1.65;
   font-size: 1.6rem;
@@ -489,7 +494,7 @@ a {
 
 .large-hero {
   position: relative;
-  color: #eee6e5;
+  color: #ffffff;
   text-align: center;
   height: 60vh;
   border-bottom: .5rem solid #e75a7c;
@@ -582,7 +587,7 @@ a {
 .btn--large {
     background-color: #634dfc;
     padding: 1.5rem 1.5rem;    
-    color: #eee6e5;
+    color: #ffffff;
     font-size: 1.4rem;  
   }
 
@@ -590,13 +595,14 @@ a {
 
 .btn--large {
       padding: 2rem 3rem;    
-      color: #eee6e5;
+      color: #ffffff;
       font-size: 1.8rem  
   }
   }
 
 section {
   padding: 3.2rem 0;
+  margin: 0 auto;
 }
 
 @media (min-width: 50rem) {
@@ -624,7 +630,7 @@ section {
 
 .feature__item {
     width: 80%;
-    padding-top: 15%;
+    padding-top: 5%;
   }
 
 .headline {
@@ -636,20 +642,18 @@ section {
     font-weight: 100;
     color: #634dfc;
     font-size: 3rem;
-    padding-top: 2rem;
   }
 
 .headline--h3 {
     font-weight: 100;
     color: #e75a7c;
     font-size: 2rem;
-    width: 34rem;
+    width: 30rem;
     margin: 1.6rem auto;
   }
 
 #our-beginning {
   width: 90%;
-  margin: 0 auto;
 }
 
 #our-beginning img {
@@ -658,17 +662,57 @@ section {
     padding: 1.5rem 0
   }
 
+#testimonials {
+  background: url('/assets/imgs/testimonial-bg.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+.testimonials__title {
+  color: #634dfc;
+  font-weight: 100;
+  font-size: 3rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .people {
   width: 90%;
   margin: 0 auto;
 }
 
 .person {
-  padding: 3rem 0;  
+  background-color: #ffffff;
+  margin: 40% 0;
+  padding: 2rem;
+  position: relative;  
+  border-radius: .8rem;
 }
 
-.testimonials {
-    
+.person--last {
+  margin-bottom: 0;  
+}
+
+.person--photo {
+  width: 16rem;
+  border-radius: 50%;
+  border: .8rem solid #ffffff;
+  position: absolute;
+  top: -25%;
+  left: 25%;
+}
+
+.person--h2 {
+    color: #634dfc;
+    font-size: 2.4rem;
+    margin: 5rem 0 0 0;
+}
+
+.person--h3 {
+    font-weight: 900;
+    color: #e75a7c;
+    font-size: 1.6rem;
+    width: 30rem;
+    margin: 0;
 }
 
 

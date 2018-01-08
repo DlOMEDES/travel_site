@@ -6,13 +6,12 @@
     font-weight: 100;
     color: $mainBlue;
     font-size: 3rem;
-    padding-top: 2rem;
   }
   &--h3 {
     font-weight: 100;
     color: $darkPink;
     font-size: 2rem;
-    width: 34rem;
+    width: 30rem;
     margin: 1.6rem auto;
   }
 }

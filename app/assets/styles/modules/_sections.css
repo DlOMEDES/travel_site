@@ -1,6 +1,6 @@
 section {
   padding: 3.2rem 0;
-  
+  margin: 0 auto;
 
   @mixin Large {
     padding: 8.2rem 0;

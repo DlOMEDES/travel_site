@@ -8,6 +8,6 @@
   justify-content: center;
   &__item {
     width: 80%;
-    padding-top: 15%;
+    padding-top: 5%;
   } 
 }
