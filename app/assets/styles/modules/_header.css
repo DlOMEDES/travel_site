@@ -1,0 +1,47 @@
+.main-header {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba($mainBlue, .3);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @mixin Large {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+
+.logo {
+
+  @mixin Large {
+    postition: relative;
+
+    img {
+      background-color: $darkPink;
+      position: absolute;
+      padding: 2rem;
+      margin-left: 3%;
+    }
+  }
+  
+}
+
+.nav-ul {
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  @mixin Large {
+    flex-direction: row;
+  }
+  &__list { 
+    padding-right: 3rem;
+
+    a {
+      color: $white;
+    }
+  }
+}
