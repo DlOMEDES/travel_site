@@ -6,6 +6,11 @@
   text-align: center;
   height: 60vh;
   border-bottom: .5rem solid $darkPink;
+
+  @mixin Large {
+    height: 90vh;
+  }
+
   &:before {
     display: block;
     position: absolute;

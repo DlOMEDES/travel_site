@@ -1,32 +1,57 @@
 .main-header {
   position: absolute;
   z-index: 2;
-  background-color: rgba($mainBlue, .3);
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
+  width: 100%;  
+  
   @mixin Large {
-    display: flex;
-    justify-content: space-between;
+    background-color: rgba($mainBlue, .3);
     flex-direction: row;
   }
-}
 
-
-.logo {
-
-  @mixin Large {
-    postition: relative;
-
+  &__logo {
+    left: 50%;
+    transform: translateX(50%) scale(.8);
+    transform-origin: 50% 0%;
+    top: 0;
     img {
-      background-color: $darkPink;
-      position: absolute;
-      padding: 2rem;
-      margin-left: 3%;
+      background-color: rgba($mainBlue, .3);
+    }
+
+    @mixin Large {
+      postition: relative;
+      left: 5%;
+      img {
+        position: absolute;
+        width: 150px;
+      }
     }
   }
-  
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $white;
+    position: absolute;
+    top: 2rem;
+    right: -3.8rem;
+
+    @mixin Large {
+      display: none;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @mixin Large {
+      position: relative;
+      display: block;
+      right: 5%;
+    }
+  }
 }
 
 .nav-ul {
