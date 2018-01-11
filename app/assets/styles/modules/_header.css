@@ -2,8 +2,7 @@
   position: absolute;
   z-index: 2;
   display: flex;
-  // justify-content: space-evenly;
-  // flex-direction: column;
+  justify-content: center;
   width: 100%;
   @mixin Large {
     background-color: rgba($mainBlue, .3);
@@ -11,12 +10,10 @@
   }
 
   &__logo {
-    left: 50%;
-    transform: translateX(50%) scale(.8);
+    transform: translateX(0%) scale(.8);
     transform-origin: 50% 0%;
-    top: 0;
     img {
-      background-color: rgba($mainBlue, .3);
+      background-color: rgba($mainBlue, .8);
     }
 
     @mixin Large {
