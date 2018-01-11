@@ -2,10 +2,9 @@
   position: absolute;
   z-index: 2;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  width: 100%; 
-  
+  // justify-content: space-evenly;
+  // flex-direction: column;
+  width: 100%;
   @mixin Large {
     background-color: rgba($mainBlue, .3);
     flex-direction: row;
@@ -36,7 +35,7 @@
     background-color: $white;
     position: absolute;
     top: 2rem;
-    right: -3.8rem;
+    right: 2rem;
 
     @mixin Large {
       display: none;
