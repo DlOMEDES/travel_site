@@ -24,12 +24,12 @@
   border-radius: .8rem;
   position: relative;
   &--photo {
-  width: 30%;
+  width: 35%;
   border-radius: 50%;
   border: .8rem solid $white;
   position: absolute;
   top: -50%;
-  left: 35%;
+  left: 33%;
   }
 }
 

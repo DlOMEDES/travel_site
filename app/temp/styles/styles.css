@@ -489,9 +489,13 @@ a {
 .text {
   line-height: 1.65;
   font-size: 1.6rem;
-  padding: 2.8rem;
   margin: 0;
 }
+
+.text__person {
+    padding: 2.8rem;
+    margin: 0;
+  }
 
 .large-hero {
   position: relative;
@@ -707,12 +711,12 @@ section {
 }
 
 .person--photo {
-  width: 30%;
+  width: 35%;
   border-radius: 50%;
   border: .8rem solid #ffffff;
   position: absolute;
   top: -50%;
-  left: 35%;
+  left: 33%;
   }
 
 .person--last {
@@ -786,7 +790,7 @@ footer {
       }
   }
 
-.main-header__icon {
+.main-header__btn {
     width: 2.5rem;
     height: 2.5rem;
     background-color: #ffffff;
@@ -797,7 +801,7 @@ footer {
 
 @media (min-width: 50rem) {
 
-.main-header__icon {
+.main-header__btn {
       display: none
   }
   }

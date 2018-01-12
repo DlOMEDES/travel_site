@@ -1,6 +1,10 @@
 .text {
   line-height: 1.65;
   font-size: 1.6rem;
-  padding: 2.8rem;
   margin: 0;
+
+  &__person {
+    padding: 2.8rem;
+    margin: 0;
+  }
 }
