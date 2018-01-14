@@ -6,7 +6,6 @@
   width: 100%;
   text-align: center;
   flex-direction: column;
-  background-color: $mainBlue;
   @mixin Large {
     background-color: rgba($mainBlue, .3);
     flex-direction: row;
@@ -32,29 +31,72 @@
   &__btn {
     width: 2.5rem;
     height: 2.5rem;
-    background-color: $white;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    &--line, &::after, &:before {
+      content: '';
+      width: 2.5rem; 
+      background-color: $white;
+      height: .2rem;
+      transition: all .5s ease-out;
+    }
 
     @mixin Large {
       display: none;
     }
   }
 
+
+  &__btn--close {
+    
+    &:before {
+      transform: rotate(45deg) scaleX(1.25)  translateY(3px);
+      transition: transform .5s ease-out;
+    }
+    
+    .main-header__btn--line {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    
+    &:after {
+      transform: rotate(-45deg) scaleX(1.25);
+      transform-origin: 0 100%;
+      transition: transform .5s ease-out;
+    }
+  }
+
+
   &__navigation {
-    display: flex;
+    opacity: 0;
     flex-direction: column;
+    transition: opacity .5s ease;
+
+    &--visible {
+      display: flex;
+      opacity: 1;
+    }
+
     @mixin Large {
       position: relative;
       display: block;
       right: 5%;
     }
   }
+
+  &__expanded {
+    background-color: $mainBlue;
+    padding-bottom: 31.5%;
+    transition: background-color .3s ease-out;
+  }
 }
 
 .nav-ul {
-  display: flex;
   // flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
@@ -63,10 +105,17 @@
     flex-direction: row;
   }
   &__list { 
-    padding: .6rem;
-
+    padding: .8rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     a {
       color: $white;
+    }
+
+    &--expanded {
+      z-index: -9999;
+      position: relative;
     }
   }
 }
