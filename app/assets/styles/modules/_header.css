@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  text-align: center;
+  flex-direction: column;
+  background-color: $mainBlue;
   @mixin Large {
     background-color: rgba($mainBlue, .3);
     flex-direction: row;
@@ -40,8 +43,8 @@
   }
 
   &__navigation {
-    display: none;
-
+    display: flex;
+    flex-direction: column;
     @mixin Large {
       position: relative;
       display: block;
@@ -55,11 +58,12 @@
   // flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  padding: 0;
   @mixin Large {
     flex-direction: row;
   }
   &__list { 
-    padding-right: 3rem;
+    padding: .6rem;
 
     a {
       color: $white;
