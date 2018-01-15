@@ -1,9 +1,39 @@
 #our-beginning {
   width: 90%;
-  img {
-    width: 100%;
+  .img-trip {
+    width: 70%;
     height: 100%;
-    padding: 1.5rem 0
   }
+  
 }
+
+@mixin Desktop {
+  #our-beginning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    .img-trip {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .beginning {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 8rem;
+      
+      .img-start {
+        width: 40%;
+        height: 100%;
+      }
+  
+      &--info {
+        width: 50%;
+      }
+    }
+  }
+  
+}
+
 

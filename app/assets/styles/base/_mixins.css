@@ -1,12 +1,6 @@
-@define-mixin Tablet {
-  @media (min-width: 680px) {
+@define-mixin Desktop {
+  @media (min-width: 720px) {
     @mixin-content;
   }
-}
-
-@define-mixin Desktop {
-  @media (min-width: 900px) {
-    @mixin-content;
-  } 
 }
 

@@ -75,7 +75,7 @@
 
   &__expanded {
     background-color: $mainBlue;
-    padding-bottom: 31.5%;
+    padding-bottom: 7.6rem;
     transition: background-color .3s ease-out;
   }
 }
@@ -101,62 +101,6 @@
     }
   }
 }
-
-
-/******************************************************
-TABLET STYLES NEXT
-*******************************************************/
-
-.main-header {
-  &__logo {
-    transform: translateX(0%) scale(.6);
-    img {
-    }
-  }
-
-  &__btn {
-    width: 3rem;
-    height: 3rem;
-    top: 2rem;
-    right: 2rem;
-    
-    &--line, &::after, &:before {
-      width: 3rem; 
-      background-color: $darkPink;
-      height: .3rem;
-    }
-  }
-
-  &__btn--close {
-    
-    &:before {
-    }
-    .main-header__btn--line {
-    }
-    &:after {
-    }
-  }
-
-
-  &__navigation {
-    &--visible {
-    }
-  }
-  &__expanded {
-  }
-}
-
-.nav-ul {
-  &__list { 
-    a {
-      color: $white;
-    }
-    &--expanded {
-    }
-  }
-}
-
-
 
 /***************************************
 DESKTOP STYLES MIXIN BELOW 
