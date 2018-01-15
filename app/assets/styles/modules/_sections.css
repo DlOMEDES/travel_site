@@ -2,7 +2,7 @@ section {
   padding: 3.2rem 0;
   margin: 0 auto;
 
-  @mixin Large {
+  @mixin Desktop {
     padding: 8.2rem 0;
     text-align: left;
   }

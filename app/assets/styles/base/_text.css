@@ -6,5 +6,6 @@
   &__person {
     padding: 2.8rem;
     margin: 0;
+    text-align: left;
   }
 }

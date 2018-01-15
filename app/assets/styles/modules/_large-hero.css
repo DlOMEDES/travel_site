@@ -7,7 +7,7 @@
   height: 60vh;
   border-bottom: .5rem solid $darkPink;
 
-  @mixin Large {
+  @mixin Desktop {
     height: 90vh;
   }
 
@@ -32,7 +32,7 @@
     left: 0%;
     text-align: center;
     width: 100%;
-    @mixin Large {
+    @mixin Desktop {
       top: 50%;
     }
   }  
@@ -41,7 +41,7 @@
     font-size: 4rem;
     font-weight: 300;
     margin: 0;
-    @mixin Large {
+    @mixin Desktop {
       font-size: 8rem;      
     }
   }
@@ -51,7 +51,7 @@
     font-weight: 300;
     margin-top: .5rem;
 
-    @mixin Large {
+    @mixin Desktop {
       font-size: 4rem;
     }
 
@@ -63,7 +63,7 @@
     max-width: 33rem;
     margin: 0 auto 4rem auto;
     
-    @mixin Large {
+    @mixin Desktop {
       font-size: 2.8rem;
       max-width: 52rem;
       margin: 0 auto 6rem auto;

@@ -10,7 +10,7 @@
     color: $white;
     font-size: 1.4rem;
     
-    @mixin Large {
+    @mixin Desktop {
       padding: 2rem 3rem;    
       color: $white;
       font-size: 1.8rem;

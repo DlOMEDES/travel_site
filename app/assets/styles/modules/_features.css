@@ -11,3 +11,22 @@
     padding-top: 5%;
   } 
 }
+
+
+@mixin Tablet {
+  #features {
+    background-color: $mainBlue;
+  }
+  
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+    &__item {
+      width: 40%;
+      padding-top: 0%;
+    } 
+  }
+}
+
