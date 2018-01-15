@@ -720,34 +720,28 @@ section {
 }
 
 .people {
-  margin: 0 auto;
   width: 90%;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .person {
-  margin: 35% auto;
   background-color: #ffffff;
+  margin: 40% 0;
   border-radius: .8rem;
   position: relative;
 }
 
 .person--photo {
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
     border: .8rem solid #ffffff;
     position: relative;
-    top: -5rem;
-    left: 0;
+    top: -3rem;
+    left: 30%;
 
   }
 
 @media (min-width: 680px) {
-
-.person--photo {
-      top: -60%
-
-  }
   }
 
 .person--last {
@@ -757,8 +751,9 @@ section {
 .person--h2 {
     color: #634dfc;
     font-size: 2.4rem;
-    padding-top: -10rem;
+    padding-top: -5rem;
     margin: 0;
+    text-align: center;
 }
 
 .person--h3 {
@@ -766,6 +761,7 @@ section {
     color: #c051e0;
     font-size: 1.6rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 footer {
