@@ -25,12 +25,17 @@
   position: relative;
   
   &--photo {
-    width: 40%;
+    width: 30%;
     border-radius: 50%;
     border: .8rem solid $white;
     position: relative;
-    top: -3rem;
-    left: 30%;
+    top: -5rem;
+    left: 35%;
+  }
+
+  &--info {
+    position: relative;
+    top: -5rem;
   }
 }
 
@@ -75,14 +80,20 @@ DESKTOP STYLES MIXIN BELOW 720PX
   .person {
     width: 32%;    
     margin-bottom: 0;      
-    margin-top: 10%;
+    margin-top: 15%;
+    height: 38rem;
     &--photo {
-      width: 40%;
+      width: 50%;
       border-radius: 50%;
       border: .8rem solid $white;
       position: relative;
-      top: -3rem;
-      left: 30%;
+      top: -10rem;
+      left: 25%;
+    }
+
+    &--info {
+      position: relative;
+      top: -10rem;
     }
   }
   

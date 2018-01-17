@@ -1,6 +1,6 @@
 .main-header {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -10,7 +10,6 @@
   &__logo {
     transform: translateX(0%) scale(.8);
     transform-origin: 50% 0%;
-    
     img {
       background-color: rgba($mainBlue, .8);
       padding: 2.5rem;
@@ -27,7 +26,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
     
     &--line, &::after, &:before {
       content: '';
@@ -65,8 +63,6 @@
     flex-direction: column;
     transition: opacity .5s ease;
     
-    
-    
     &--visible {
       display: flex;
       opacity: 1;
@@ -75,7 +71,7 @@
 
   &__expanded {
     background-color: $mainBlue;
-    padding-bottom: 7.6rem;
+    padding-bottom: 12.8rem;
     transition: background-color .3s ease-out;
   }
 }
@@ -110,21 +106,20 @@ DESKTOP STYLES MIXIN BELOW
 @mixin Desktop {
   .main-header {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     text-align: left;
     flex-direction: row;
-    background-color: rgba($mainBlue, .8);
+    background-color: rgba($mainBlue, .3);
     &__logo {
       transform: none;
       position: absolute;
       left: 5%;
       img {
         background-color: rgba($mainBlue, .8);
-        padding: 2.5rem;
-        width: 50%;
+        padding: 2rem;
       }
     }
   
@@ -135,23 +130,24 @@ DESKTOP STYLES MIXIN BELOW
     &__navigation {
       opacity: 1;
       transition: opacity .5s ease;
+      width: 90%;
+      margin: 0 auto;
     }
 
   }
   
   .nav-ul {
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
     display: flex;
     justify-content: flex-end;
-
+    
     &__list { 
       padding: 0;
-      margin: 0;
+      margin: 0 0 0 3%;
       font-size: 1.4rem;
       letter-spacing: 0;
       text-transform: capitalize;
-      margin-right: 4rem;
     }
   }  
 }
