@@ -3,12 +3,14 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_text";
+@import "base/_sections";
+@import "base/_headline";
+
+@import "modules/_header";
 @import "modules/_large-hero";
 @import "modules/_btn";
-@import "modules/_sections";
-@import "modules/_features";
-@import "modules/_headline";
 @import "modules/_our-beginning";
+@import "modules/_features";
 @import "modules/_testimonials";
 @import "modules/_footer";
-@import "modules/_header";
+@import "modules/_reveal-item";
