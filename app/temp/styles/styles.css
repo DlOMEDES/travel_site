@@ -585,6 +585,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+
 }
 
 .main-header__logo {
@@ -722,17 +723,18 @@ DESKTOP STYLES MIXIN BELOW
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: rgba(99,77,252, .3);
-
   }
+
     .main-header__logo {
       -webkit-transform: none;
               transform: none;
       position: absolute;
       left: 5%;
+      -webkit-transform: scale(.8);
+              transform: scale(.8);
     }
       .main-header__logo img {
-        background-color: rgba(99,77,252, .8);
-        padding: 2rem;
+        background-color: rgba(99,77,252, .5);
       }
   
     .main-header__btn {
@@ -746,6 +748,24 @@ DESKTOP STYLES MIXIN BELOW
       width: 90%;
       margin: 0 auto;
     }
+
+
+/* STICKY HEADER STYLES  */    
+    .main-header--dark {
+      position: fixed;
+      background-color: rgba(85,65,212, .9);
+      border-bottom: 1px solid #c051e0;
+    }
+      .main-header--dark .main-header__logo {
+        -webkit-transform: none;
+                transform: none;
+        position: absolute;
+        left: 5%;
+        -webkit-transform: scale(.45);
+                transform: scale(.45);
+      }
+        .main-header--dark .main-header__logo img {
+        }
   
   .nav-ul {
     padding: 1rem 0;

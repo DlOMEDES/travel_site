@@ -1,17 +1,20 @@
 import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
 import ScrollToSee from './modules/ScrollToSee';
+import StickyHeader from './modules/stickyHeader';
 
 var mobileMenu = new MobileMenu();
 new ScrollToSee($('.feature__item'), '85%');
-new ScrollToSee($('.person'), '60%');
- 
-// var scrollToSee = new ScrollToSee();
+new ScrollToSee($('.person'), '90%');
+var stickyHeader = new StickyHeader();
 
+
+
+
+// var scrollToSee = new ScrollToSee();
 // var $ = require('jquery');
 // // var Person = require('./modules/Person'); importing before es6
 // import Person from './modules/Person';
-
 
 // class Adult extends Person {
 //   tax() {
