@@ -477,10 +477,6 @@ body {
   font-size: 1.6rem;
 }
 
-a {
-  color: #634dfc;
-}
-
 /* h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -499,14 +495,16 @@ a {
   }
 
 section {
-  margin: 3.2rem auto;
+  margin: 0 auto;
+  padding: 3.2rem 0;
 }
 
 @media (min-width: 720px) {
 
 section {
     padding: 10rem 0;
-    text-align: left
+    text-align: left;
+    margin: 0 auto
 }
   }
 
@@ -785,6 +783,10 @@ DESKTOP STYLES MIXIN BELOW
       letter-spacing: 0;
       text-transform: capitalize;
     }
+
+      .nav-ul__list .current-link {
+        color: #c051e0;
+      }
   }
 
 .large-hero {
@@ -1045,6 +1047,8 @@ DESKTOP STYLES MIXIN BELOW
 #testimonials {
   background: url('/assets/imgs/testimonial-bg.jpg') top center no-repeat;
   background-size: cover;
+  padding-bottom: 5rem;
+  margin-top: 0;
 }
 
 .testimonials__title {
@@ -1172,11 +1176,23 @@ DESKTOP STYLES MIXIN BELOW 720PX
   }
 
 footer {
-  background-color: #634dfc;
+  background: url(http://res.cloudinary.com/dlomedes/image/upload/v1516360655/travler-footerBG2_j00bdc.jpg) no-repeat center;
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
   color: #ffffff;
-  padding: 3rem 0;
   text-align: center;
+  border-top: 5px solid #c051e0;
 }
+
+footer .footer-container {
+    background-color: rgba(99,77,252, .4);    
+    opacity: .9;
+    padding: 10rem 0;
+  }
+
+footer .footer-container .btn {
+      margin-top: 2rem;
+    }
 
 .reveal-item {
   opacity: 0;

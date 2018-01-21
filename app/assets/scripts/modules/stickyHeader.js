@@ -6,6 +6,9 @@ class StickyHeader {
     this.mainHeader = $('.main-header');
     this.headerTriggerElement = $('.large-hero__title');
     this.onHeaderPoint();
+
+    this.sections = $('section');
+    pageSectionWaypoints();
   }
 
   onHeaderPoint() {
@@ -21,6 +24,19 @@ class StickyHeader {
       }
     });
   }
+
+  pageSectionWaypoints() {
+    this.sections.eact(function() {
+      var currentSection = this;
+      new Waypoint({
+        element: currentSection,
+        handler: function() {
+          var sectionLinks = currentSection.getAttribute('data-matching-link');
+          $(sectionLinks).addClass('current-link');
+        }
+      });
+    });
+  }
 }
 
-export default StickyHeader;
+export default StickyHeader; 

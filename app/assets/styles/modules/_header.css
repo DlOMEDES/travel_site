@@ -165,6 +165,10 @@ DESKTOP STYLES MIXIN BELOW
       font-size: 1.4rem;
       letter-spacing: 0;
       text-transform: capitalize;
+
+      .current-link {
+        color: $darkPink;
+      }
     }
   }  
 }

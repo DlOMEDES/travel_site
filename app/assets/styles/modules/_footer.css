@@ -1,6 +1,18 @@
 footer {
-  background-color: $mainBlue;
+  background: url(http://res.cloudinary.com/dlomedes/image/upload/v1516360655/travler-footerBG2_j00bdc.jpg) no-repeat center;
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
   color: $white;
-  padding: 3rem 0;
   text-align: center;
+  border-top: 5px solid $darkPink;
+  .footer-container {
+    background-color: rgba($mainBlue, .4);    
+    opacity: .9;
+    padding: 10rem 0;  
+
+    .btn {
+      margin-top: 2rem;
+    }
+  }
 }
+

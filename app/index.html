@@ -8,17 +8,17 @@
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
-<body>
+<body id="home">
   <header class="main-header">
     <nav class="main-header__navigation">
       <div class="main-header__logo">
         <img src="assets/imgs/travlericon.png">      
       </div>
       <ul class="nav-ul">
-        <li class="nav-ul__list nav-ul__list--expanded"><a href="#our-beginning">Our Beginning</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a href="#features">Features</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a href="#testimonials">Testimonials</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a href="" class="btn">Get in Touch</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a id="beginning-link" href="#our-beginning">Our Beginning</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a id="features-link" href="#features">Features</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a id="testimonials-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a id="touch-link" href="" class="btn">Get in Touch</a></li>
       </ul>
     </nav>
     <!-- this is for mobile sandwich btn  -->
@@ -37,7 +37,7 @@
       </div>
   </div>
 
-  <section id="our-beginning">
+  <section id="our-beginning" data-matching-link="#beginning-link">
     <header class="headline">
       <h2 class="headline--h2">The first trip we planned <strong>was our own.</strong></h2>
       <h3 class="headline--h3">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
@@ -56,7 +56,7 @@
     </div>
   </section>
 
-  <section id="features">
+  <section id="features" data-matching-link="#features-link">
     <header class="headline">
       <img class="icons" src="assets/imgs/star.svg">
       <h2>Our Features</h2>      
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <section id="testimonials">
+  <section id="testimonials" data-matching-link="#testimonials-link">
     <header class="headline">
       <img class="comment-svg" src="assets/imgs/comment.svg">
       <h2 class="testimonials__title">Real <strong>Testimonials</strong></h2>
@@ -129,8 +129,10 @@
   </section>
 
   <footer>
-    <p class="text">Copyright &copy; 2017 Travler Escapes. All rights reserved.</p>
-    <a class="btn" href="#">Get in Touch</a>
+    <div class="footer-container">
+      <p class="text">Copyright &copy; 2017 Travler Escapes. All rights reserved.</p>
+      <a class="btn" href="#">Get in Touch</a>
+    </div>
   </footer>
 
   <script src="/temp/scripts/App.js"></script>

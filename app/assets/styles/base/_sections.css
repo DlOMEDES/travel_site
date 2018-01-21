@@ -1,8 +1,10 @@
 section {
-  margin: 3.2rem auto;
-
+  margin: 0 auto;
+  padding: 3.2rem 0;
+  
   @mixin Desktop {
     padding: 10rem 0;
     text-align: left;
+    margin: 0 auto;
   }
 }

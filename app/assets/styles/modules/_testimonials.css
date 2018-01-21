@@ -1,6 +1,8 @@
 #testimonials {
   background: url('/assets/imgs/testimonial-bg.jpg') top center no-repeat;
   background-size: cover;
+  padding-bottom: 5rem;
+  margin-top: 0;
 }
 
 .testimonials__title {
