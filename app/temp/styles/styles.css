@@ -774,8 +774,6 @@ DESKTOP STYLES MIXIN BELOW
         -webkit-transform: scale(.45);
                 transform: scale(.45);
       }
-        .main-header--dark .main-header__logo img {
-        }
   
   .nav-ul {
     padding: 1rem 0;
@@ -794,11 +792,16 @@ DESKTOP STYLES MIXIN BELOW
       font-size: 1.4rem;
       letter-spacing: 0;
       text-transform: capitalize;
-      
+
     }
+
         .nav-ul__list a.current-link {
           color: #c051e0;
         }
+
+      .nav-ul__list--expanded {
+        z-index: 1;
+      }
   }
 
 .large-hero {

@@ -145,8 +145,6 @@ DESKTOP STYLES MIXIN BELOW
         position: absolute;
         left: 5%;
         transform: scale(.45);
-        img {
-        }
       }
     }
   }
@@ -163,14 +161,20 @@ DESKTOP STYLES MIXIN BELOW
       font-size: 1.4rem;
       letter-spacing: 0;
       text-transform: capitalize;
-
       a {
+
         &.current-link {
           color: $darkPink;
         }
+
       }
-      
+
+      &--expanded {
+        z-index: 1;
+      }
+
     }
-  }  
+  }
+
 }
 
