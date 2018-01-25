@@ -2,12 +2,15 @@ import $ from 'jquery';
 import MobileMenu from './modules/MobileMenu';
 import ScrollToSee from './modules/ScrollToSee';
 import StickyHeader from './modules/stickyHeader';
+import Modal from './modules/Modal';
 
 var mobileMenu = new MobileMenu();
+
 new ScrollToSee($('.feature__item'), '85%');
 new ScrollToSee($('.person'), '90%');
 var stickyHeader = new StickyHeader();
 
+var modal = new Modal();
 
 
 

@@ -1,9 +1,23 @@
 .reveal-item {
   opacity: 0;
   transition: all 1.5s ease-out;
-  transform: scale(1.3);
   &__visible {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+
+
+
+@mixin Desktop {
+  .reveal-item {
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    transform: scale(1.3);
+    &__visible {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }

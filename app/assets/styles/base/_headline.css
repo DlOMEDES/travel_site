@@ -5,17 +5,24 @@
   flex-direction: column;
   position: relative;
   padding-top: 4rem;  
-  &--h2 {
+  &__h2 {
     font-weight: 100;
     color: $mainBlue;
     font-size: 3rem;
+    margin: 1rem auto;
   }
-  &--h3 {
+
+  &__h3 {
     font-weight: 100;
     color: $darkPink;
     font-size: 2rem;
     width: 30rem;
-    margin: 1.6rem auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  &__icons {
+
   }
 }
 
@@ -27,21 +34,28 @@
     flex-direction: column;
     position: relative;
     padding-top: 0;  
+
+    &__img {
+      padding-bottom: 3rem;
+    }
     
-    &--h2 {
+    &__h2 {
       font-weight: 100;
       color: $mainBlue;
       font-size: 4rem;
       margin-bottom: 2rem;
     }
     
-    &--h3 {
+    &__h3 {
       font-weight: 100;
       color: $darkPink;
       font-size: 3rem;
       width: 50rem;
       margin: 0 auto;
-      margin-bottom: 6rem;
+    }
+    
+    &__icons {
+    
     }
   } 
 }

@@ -1,0 +1,11 @@
+.social-icons {
+  padding: 5rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  &__icon {
+    background-color: $mainBlue;
+    padding: 3rem;
+    cursor: pointer;  
+  }
+}

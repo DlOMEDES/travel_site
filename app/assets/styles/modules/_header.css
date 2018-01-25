@@ -34,7 +34,6 @@
       height: .2rem;
       transition: all .5s ease-out;
     }
-
   }
 
 
@@ -71,7 +70,7 @@
 
   &__expanded {
     background-color: $mainBlue;
-    padding-bottom: 12.8rem;
+    padding-bottom: 10.2rem;
     transition: background-color .3s ease-out;
   }
 
@@ -80,7 +79,6 @@
 .nav-ul {
   align-items: center;
   padding: 0;
-
   
   &__list { 
     padding: .8rem;
@@ -93,7 +91,7 @@
 
 
     &--expanded {
-      z-index: -9999;
+      z-index: -1;
       position: relative;
     }
   }
@@ -166,9 +164,12 @@ DESKTOP STYLES MIXIN BELOW
       letter-spacing: 0;
       text-transform: capitalize;
 
-      .current-link {
-        color: $darkPink;
+      a {
+        &.current-link {
+          color: $darkPink;
+        }
       }
+      
     }
   }  
 }

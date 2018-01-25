@@ -14,11 +14,12 @@
       <div class="main-header__logo">
         <img src="assets/imgs/travlericon.png">      
       </div>
+      <!-- main navigation -->
       <ul class="nav-ul">
-        <li class="nav-ul__list nav-ul__list--expanded"><a id="beginning-link" href="#our-beginning">Our Beginning</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a id="features-link" href="#features">Features</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a id="testimonials-link" href="#testimonials">Testimonials</a></li>
-        <li class="nav-ul__list nav-ul__list--expanded"><a id="touch-link" href="" class="btn">Get in Touch</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a href="#our-beginning" id="beginning-link">Our Beginning</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a href="#features" id="features-link">Features</a></li>
+        <li class="nav-ul__list nav-ul__list--expanded"><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+        <a href="#" class="btn nav-ul__list nav-ul__list--expanded open-modal">Get in Touch</a>
       </ul>
     </nav>
     <!-- this is for mobile sandwich btn  -->
@@ -39,8 +40,8 @@
 
   <section id="our-beginning" data-matching-link="#beginning-link">
     <header class="headline">
-      <h2 class="headline--h2">The first trip we planned <strong>was our own.</strong></h2>
-      <h3 class="headline--h3">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
+      <h2 class="headline__h2">The first trip we planned <strong>was our own.</strong></h2>
+      <h3 class="headline__h3">Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
     </header>
     <img class="img-trip" src="assets/imgs/first-trip.jpg" alt="Couple walking down a street.">
     
@@ -58,34 +59,34 @@
 
   <section id="features" data-matching-link="#features-link">
     <header class="headline">
-      <img class="icons" src="assets/imgs/star.svg">
+      <img class="headline__icons" src="assets/imgs/star.svg">
       <h2>Our Features</h2>      
     </header>
     <div class="feature">
       <div class="feature__item">
         <div class="headline">
-          <img class="icons" src="assets/imgs/rain.svg">
+          <img class="headline__icons" src="assets/imgs/rain.svg">
           <h3>We&rsquo;ll Watch the Weather</h3>
         </div>
         <p class="text">Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
       </div>
       <div class="feature__item">
         <div class="headline">
-          <img class="icons" src="assets/imgs/globe.svg">
+          <img class="headline__icons" src="assets/imgs/globe.svg">
           <h3>Global Guides</h3>
         </div>
         <p class="text">We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
       </div>
       <div class="feature__item">
         <div class="headline">
-          <img class="icons" src="assets/imgs/wifi.svg">
+          <img class="headline__icons" src="assets/imgs/wifi.svg">
           <h3>Wi-Fi Waypoints</h3>
         </div>
         <p class="text">We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
       </div>
       <div class="feature__item">
         <div class="headline">
-          <img class="icons" src="assets/imgs/fire.svg">
+          <img class="headline__icons" src="assets/imgs/fire.svg">
           <h3>Survival Kit</h3>
         </div>
         <p class="text">Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
@@ -95,8 +96,8 @@
 
   <section id="testimonials" data-matching-link="#testimonials-link">
     <header class="headline">
-      <img class="comment-svg" src="assets/imgs/comment.svg">
-      <h2 class="testimonials__title">Real <strong>Testimonials</strong></h2>
+      <img class="headline__img" src="assets/imgs/comment.svg">
+      <h2 class="headline__h2">Real <strong>Testimonials</strong></h2>
     </header>
    <div class="people">
      <div class="person">
@@ -134,6 +135,23 @@
       <a class="btn" href="#">Get in Touch</a>
     </div>
   </footer>
+
+  <div class="modal">
+    <header class="headline">
+      <img class="headline__img" src="assets/imgs/mail.svg">
+      <h2 class="headline__h2">Get in <strong>Touch</strong></h2>
+      <h3 class="headline__h3">Connect with us using any of the platforms below.</h3>
+    </header>
+
+    <div class="social-icons">
+      <img class="social-icons__icon" src="assets/imgs/facebook.svg" alt="Facebook icon">
+      <img class="social-icons__icon" src="assets/imgs/twitter.svg" alt="Facebook icon">
+      <img class="social-icons__icon" src="assets/imgs/instagram.svg" alt="Facebook icon">
+      <img class="social-icons__icon" src="assets/imgs/youtube.svg" alt="Facebook icon">
+    </div>
+
+    <div class="modal__close">X</div>
+  </div>
 
   <script src="/temp/scripts/App.js"></script>
 </body>
