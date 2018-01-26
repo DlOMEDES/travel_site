@@ -1247,6 +1247,8 @@ footer .footer-container .btn {
   background: #ffffff;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .modal:before {

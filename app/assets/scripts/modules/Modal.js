@@ -15,7 +15,15 @@ class Modal {
     // clicking x close btn
     this.closeModalBtn.click(this.closeModal.bind(this));
 
-    // hitting esc key to x close
+    // hitting any keypress
+    $(document).keyup(this.keyPressHandler.bind(this));
+  }
+
+  keyPressHandler(e) {
+    if(e.keyCode === 27) {
+      this.closeModal();
+      console.log('esc pressed!'); 
+    }
   }
 
   openModal() {
@@ -26,35 +34,7 @@ class Modal {
   closeModal() {
     this.modal.removeClass('modal--visible');
   }
+
 }
-
-
-
-// class Modal {
-//   constructor() {
-//     this.openModalBtn = $('.open-modal');
-//     this.modal = $('.modal');
-//     this.closeModal = $('.modal__close');
-//     this.events();
-//   }
-
-//   events() {
-//     // clicking open btn
-//     this.openModalBtn.click(this.openModal);
-//     // clicking x close btn
-//     this.closeModal.click(this.closeModal.bind(this));
-//     // push esc key
-//   }
-
-//   openModal() {
-//     this.modal.addClass('modal--visible');
-//     return false;
-//   }
-
-//   closeModal() {
-//     this.modal.removeClass('modal--visible');
-//   }
-// }
-
 
 export default Modal;

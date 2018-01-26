@@ -11504,7 +11504,16 @@ var Modal = function () {
       // clicking x close btn
       this.closeModalBtn.click(this.closeModal.bind(this));
 
-      // hitting esc key to x close
+      // hitting any keypress
+      (0, _jquery2.default)(document).keyup(this.keyPressHandler.bind(this));
+    }
+  }, {
+    key: 'keyPressHandler',
+    value: function keyPressHandler(e) {
+      if (e.keyCode === 27) {
+        this.closeModal();
+        console.log('esc pressed!');
+      }
     }
   }, {
     key: 'openModal',
@@ -11521,33 +11530,6 @@ var Modal = function () {
 
   return Modal;
 }();
-
-// class Modal {
-//   constructor() {
-//     this.openModalBtn = $('.open-modal');
-//     this.modal = $('.modal');
-//     this.closeModal = $('.modal__close');
-//     this.events();
-//   }
-
-//   events() {
-//     // clicking open btn
-//     this.openModalBtn.click(this.openModal);
-//     // clicking x close btn
-//     this.closeModal.click(this.closeModal.bind(this));
-//     // push esc key
-//   }
-
-//   openModal() {
-//     this.modal.addClass('modal--visible');
-//     return false;
-//   }
-
-//   closeModal() {
-//     this.modal.removeClass('modal--visible');
-//   }
-// }
-
 
 exports.default = Modal;
 
